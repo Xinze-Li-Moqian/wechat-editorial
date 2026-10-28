@@ -1,0 +1,18 @@
+{
+  "article": "margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif;color:#29313D;background:#F7F8FC;",
+  "title_panel": "margin:0;padding:30px 28px 28px;background:#080F1C;border-top:5px solid #3F5CE6;",
+  "title": "margin:18px 0 12px;padding:0;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:28px;line-height:1.48;font-weight:750;letter-spacing:1px;color:#F7F8FC;text-align:left;",
+  "subtitle": "margin:0 0 22px;padding:0;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:13px;line-height:1.75;letter-spacing:.45px;color:#ADBDD7;text-align:left;",
+  "byline": "margin:0;padding:14px 0 0;border-top:1px solid #2D405D;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:13px;line-height:1.8;color:#CFD9E7;text-align:left;",
+  "body": "margin:0;padding:0 22px 36px;",
+  "heading": "margin:42px 0 22px;padding:16px 0 0;border-top:1px solid #D8DFEA;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:21px;line-height:1.55;font-weight:750;letter-spacing:.3px;color:#080F1C;text-align:left;",
+  "paragraph": "margin:0 0 24px;padding:0;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif;font-size:17px;line-height:1.95;letter-spacing:.4px;color:#29313D;text-align:justify;word-break:break-word;",
+  "emphasis": "font-weight:700;color:#3F5CE6;",
+  "caption": "margin:12px 0 0;font-size:12px;line-height:1.8;color:#64707F;text-align:center;",
+  "code_panel": "margin:26px 0;padding:16px 14px;background:#EDF1F8;border-left:3px solid #3F5CE6;box-sizing:border-box;max-width:100%;",
+  "code_caption": "margin:0 0 12px;font-size:12px;line-height:1.6;color:#64707F;overflow-wrap:anywhere;",
+  "code": "margin:0;padding:0;max-width:100%;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;font-size:14px;line-height:1.8;color:#263D69;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;",
+  "table": "width:100%;table-layout:fixed;border-collapse:collapse;margin:26px 0;font-size:14px;line-height:1.75;color:#29313D;",
+  "table_cell": "padding:12px 8px;border-bottom:1px solid #D8DFEA;text-align:left;vertical-align:top;overflow-wrap:anywhere;",
+  "table_header": "background:#EAF0FF;color:#263D69;font-weight:700;"
+}

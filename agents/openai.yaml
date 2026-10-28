@@ -1,0 +1,4 @@
+interface:
+  display_name: "我们的公众号模板"
+  short_description: "把新闻和正文制作成蓝金风格公众号复制版，含插画与手机可读公式"
+  default_prompt: "使用 $wechat-editorial，把我提供的新闻或正文按我们的公众号模板制作成可复制发布的 HTML。"

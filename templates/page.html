@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{TITLE}}</title>
+<style>
+body{margin:0;background:#E9EDF3;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}main,aside{max-width:790px;margin:20px auto;box-sizing:border-box}aside{position:sticky;top:0;z-index:2;background:#fff;padding:14px 20px;border-radius:8px;box-shadow:0 2px 12px #080f1c12}button{cursor:pointer;padding:10px 18px;border:0;border-radius:5px;background:#3F5CE6;color:#fff;font-size:14px;margin-right:10px}#select{background:#E9EDF3;color:#29313D}aside p{font-size:13px;color:#64707F;margin:10px 0 0;line-height:1.6}@media(max-width:820px){main,aside{margin:10px}}@media print{aside{display:none}}
+select{padding:10px;border:0;border-radius:5px;background:#E9EDF3;color:#29313D;font-size:14px;max-width:100%}button,select{margin-bottom:6px}
+</style></head><body>
+<aside><button id="copy" type="button">复制全文</button><button id="select" type="button">选中正文</button><select id="preview-width" aria-label="文章预览宽度"><option value="">原始宽度</option><option value="375px">375 px</option><option value="430px">430 px</option><option value="790px">790 px</option></select><p id="status" role="status">点击“复制全文”，再粘贴到公众号正文编辑框。</p></aside>
+<main>{{ARTICLE}}</main>
+<script>
+const article=document.getElementById('article'), statusLine=document.getElementById('status');
+document.getElementById('preview-width').onchange=e=>{document.querySelector('main').style.maxWidth=e.target.value||'790px';};
+function selectArticle(){const range=document.createRange();range.selectNodeContents(article);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);}
+document.getElementById('select').onclick=()=>{selectArticle();statusLine.textContent='正文已选中，请按 ⌘C（Windows：Ctrl+C）复制。';};
+document.getElementById('copy').onclick=async()=>{
+  const html=article.outerHTML, plain=article.innerText;let copied=false;
+  const handler=e=>{if(e.clipboardData){e.clipboardData.setData('text/html',html);e.clipboardData.setData('text/plain',plain);e.preventDefault();}};
+  selectArticle();document.addEventListener('copy',handler);
+  try{copied=document.execCommand('copy');}catch(e){}finally{document.removeEventListener('copy',handler);}
+  if(!copied && navigator.clipboard && window.ClipboardItem){try{await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([plain],{type:'text/plain'})})]);copied=true;}catch(e){}}
+  statusLine.textContent=copied?'已复制，请粘贴到公众号正文编辑框。':'自动复制未成功；正文已选中，请按 ⌘C（Windows：Ctrl+C）。';
+};
+</script></body></html>

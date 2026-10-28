@@ -1,0 +1,106 @@
+{
+  "title": "公众号设计样稿",
+  "subtitle": "标题、正文、图片与数学内容的排版示例",
+  "byline": "作者或来源 · 日期",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "segments": [
+        {
+          "text": "这里是文章导语。",
+          "bold": true
+        },
+        {
+          "text": "用几句话交代事件、人物和核心问题。这份样稿展示完整的排版组件，便于你调整设计。"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "assets/illustration.jpg",
+      "caption": "蓝金插图风格示例。"
+    },
+    {
+      "type": "heading",
+      "text": "一、正文排版"
+    },
+    {
+      "type": "paragraph",
+      "text": "正文用来展开一个完整的意思。修改主题文件中的字号、行距、段落间隔和颜色，再重新生成页面，就能比较不同设计的阅读效果。"
+    },
+    {
+      "type": "paragraph",
+      "segments": [
+        {
+          "text": "可以将关键内容设置为"
+        },
+        {
+          "text": "蓝色加粗文字",
+          "bold": true
+        },
+        {
+          "text": "，其余部分保持正常字重。"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "二、数学公式与代码"
+    },
+    {
+      "type": "paragraph",
+      "text": "下面以正规子群的定义展示公式组件。公式使用 LaTeX 生成的 PNG，编号已包含在图片中。"
+    },
+    {
+      "type": "formula",
+      "src": "assets/equation.png",
+      "number": 1,
+      "latex": "gNg^{-1}=N\\qquad(\\forall g\\in G)"
+    },
+    {
+      "type": "code",
+      "caption": "Lean 示例",
+      "text": "example (n : Nat) : n + 0 = n := by\n  rfl"
+    },
+    {
+      "type": "heading",
+      "text": "三、表格"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "项目",
+        "数值",
+        "说明"
+      ],
+      "rows": [
+        [
+          "示例 A",
+          "100",
+          "填写需要比较的信息。"
+        ],
+        [
+          "示例 B",
+          "200",
+          "长内容会在手机上换行。"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "四、结尾"
+    },
+    {
+      "type": "paragraph",
+      "text": "在这里回应开篇的问题，并写清文章最终的判断。结尾作为正文的一部分完整展开，随后列出参考资料。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "[1] 原始资料标题（示例占位）",
+      "publisher": "来源机构",
+      "date": "YYYY-MM-DD",
+      "url": "https://example.com/source"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+.venv/
+work/
+dist/
+*.aux
+*.log
+*.render.tex
